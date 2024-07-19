@@ -1,1 +1,4 @@
-<p>completed-task works!</p>
+<app-page-title></app-page-title>
+  <div class="flex-col mt-5">
+  <app-task-list [taskList]="taskList" (complete)="onComplete($event)" (important)="onImportant($event)"></app-task-list>
+  </div>
